@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop 1 main page</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <meta charset="utf-8">
+    <title>Shop</title>
+    <link rel="shortcut icon" href="/favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="author" href="https://razorpay.com/about/" title="Team Razorpay">
+    <meta name="google" content="notranslate">
+    <meta name="description"
+        content="Get a Demo of Razorpay's Live Payment Checkout Form. Pay Rs.1 and experience Indias's Best Payment Gateway.">
+    <meta name="keywords"
+        content="payment gateway, india, credit card, debit card, online payment, college fees, mastercard, visa, maestro, rupay, payment solutions">
+    <meta name="author" content="Razorpay">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@razorpay">
+    <meta name="twitter:title" content="Demo of Live Payment Checkout | Razorpay · Payment Gateway">
+    <meta name="twitter:description"
+        content="Get a Demo of Razorpay's Live Payment Checkout Form. Pay Rs.1 and experience Indias's Best Payment Gateway.">
+    <meta name="twitter:image" content="https://razorpay.com/images/og.png">
+    <meta property="og:title" content="Demo of Live Payment Checkout | Razorpay · Payment Gateway">
+    <meta property="og:description"
+        content="Get a Demo of Razorpay's Live Payment Checkout Form. Pay Rs.1 and experience Indias's Best Payment Gateway.">
+    <meta property="og:url" content="https://razorpay.com">
+    <meta property="og:site_name" content="Razorpay">
+    <meta property="og:image" content="https://razorpay.com/images/og.png">
+    <meta property="fb:app_id" content="413603529019368">
+    <script type="application/ld+json">{
+        "@context" : "http://schema.org",
+        "@type" : "Organization",
+        "name" : "Razorpay",
+        "description": "Online Payments for Indian Businesses",
+        "url" : "https://razorpay.com",
+        "email": "contact@razorpay.com",
+        "hasMap": "https://where.rzp.io",
+        "sameAs" : [
+          "https://twitter.com/razorpay",
+          "https://plus.google.com/+RazorpaySoftwarePrivateLimitedBengaluru",
+          "https://www.facebook.com/Razorpay",
+          "https://github.com/razorpay",
+          "https://www.youtube.com/channel/UCddN5MDa_yirLO8fKVMVnhw"
+         ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1st Floor, SJR Cyber, 22, Laskar Hosur Road, Adugodi, Bangalore",
+          "addressLocality": "Bengaluru",
+          "addressRegion": "Karnataka",
+          "postalCode": "560030",
+          "addressCountry": "IN"
+        }
+      }</script>
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700" rel="stylesheet" type="text/css">
+    <script src="js/checkout.js"></script>
+    <script>window.DISABLE_CHATBOT = true;
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+</head>
+
+<body>
+    <section>
+        <header>
+            <div class="circle"></div>
+
+            <a href="#" class="logo">CKD<span></span></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+
+            </ul>
+        </header>
+    </section>
+
+    <div>
+        <div class="container-fluid" style="background-image: linear-gradient(white,grey); height: 200vh;">
+            <h1 style="text-align: center;">Our Existing Products</h1>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/kurkure.jpg" class="card-img-top" alt="Sorry image not available">
+                        <div class="card-body">
+                            <h5 class="card-title">Kurkure</h5>
+                            <div class="price">₹10.00</div>
+                            <hr>
+                            <p class="card-text">This is Product 1.Click on below button for succesfull payment</p>
+                            <!-- <button class="razorpay-payment-button btn filled small btn btn-outline-success" id="paybtn"
+                                type="button">Pay</button> -->
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                                    Pay
+                                </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/LIMCA-2.jpg" class="card-img-top" alt="Sorry image not available">
+                        <div class="card-body">
+                            <h5 class="card-title">Limca</h5>
+                            <div class="price">₹20.00</div>
+                            <hr>
+                            <p class="card-text">This is Product 2.Click on below button for succesfull payment</p>
+                            <button class="razorpay-payment-button btn filled small btn btn-outline-success" id=""
+                                type="button">Pay</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/dairy milk.jpg" class="card-img-top" alt="Sorry image not available">
+                        <div class="card-body">
+                            <h5 class="card-title">Dairy Milk</h5>
+                            <div class="price">₹100.00</div>
+                            <hr>
+                            <p class="card-text">This is Product 3.Click on below button for succesfull payment</p>
+                            <button class="razorpay-payment-button btn filled small btn btn-outline-success" id=""
+                                type="button">Pay</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/Burger.png" class="card-img-top" alt="Sorry image not available">
+                        <div class="card-body">
+                            <h5 class="card-title">Burger</h5>
+                            <div class="price">₹50.00</div>
+                            <hr>
+                            <p class="card-text">This is Product 4.Click on below button for succesfull payment</p>
+                            <button class="razorpay-payment-button btn filled small btn btn-outline-success" id=""
+                                type="button">Pay</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <hr>
+    <hr>
+    <!-- Modal Starts -->
+    <!-- Button trigger modal -->
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Your Product</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/kurkure.jpg" class="card-img-top" alt="Sorry image not available">
+                            <div class="card-body">
+                                <h5 class="card-title">Kurkure</h5>
+                                <div class="price">₹10.00</div>
+                                <hr>
+                                <p class="card-text">Kurkure. Click on below button for succesfull payment</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-outline-success" data-target="#ModalCode">Proceed to Generate code for this Product</button> -->
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#ModalCode"
+                        onclick="generateOTP()">
+                        Proceed to Generate code for this Product
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 begins  -->
+
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="ModalCode" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Code for This Product is : </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="Code">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button class="razorpay-payment-button btn filled small btn btn-outline-success" id="paybtn"
+                    type="button">Pay</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2 ends -->
+    <!-- Modal Ends -->
+
+
+
+    <!-- script for payment starts -->
+    <!--[if lt IE 9]>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <![endif]-->
+    <!--[if (gte IE 9) | (!IE)]><!-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--<![endif]-->
+    <script>if (typeof jQuery == 'undefined')
+            document.write(decodeURI("%3Cscript src='/assets/jquery-1.11.3.min.js'%3E%3C/script%3E"));</script>
+    <script src="js/app.js"></script>
+    <script>function initAnalytics() {
+            analytics.init(['ga', 'fb', 'twitter', 'quora', 'linkedin', 'adroll'], window.location.hostname.indexOf('razorpay.com') < 0);
+
+            // Init old GA key.
+            ga('create', 'UA-53341507-1', 'auto', 'old');
+
+            setTimeout(function () {
+                analytics.track('ga', 'pageview');
+                analytics.track('fb', 'PageView');
+                analytics.track('twitter');
+                analytics.track('quora', 'ViewContent');
+                analytics.track('linkedin');
+            }, 100);
+        }
+
+        $('.login-link').click(function (e) {
+            e.preventDefault();
+            goog_report_conversion(this.href);
+            return false;
+        })
+
+        $('#rzp-footer-form').submit(function (e) {
+            var button = $(this).find('button');
+            var parent = $(this);
+            button.attr('disabled', 'true').html('Please Wait...');
+            $.ajax({
+                method: 'get',
+                url: this.action,
+                data: $(this).serialize(),
+                complete: function (r) {
+                    button.removeAttr('disabled').html("Subscribe");
+                    if (r.responseJSON === undefined) {
+                        submissionInfo(parent, 'There was an error, please check your internet.');
+                    } else if (r.responseJSON.status === 'success') {
+                        parent[0].reset();
+                    } else {
+                        submissionInfo(parent, 'There was an error in submitting your form');
+                    }
+                }
+            })
+            return false;
+        })</script>
+    <script async src="https://cdn.razorpay.com/static/analytics/bundle.js" onload="initAnalytics()"></script>
+    <script>function padStart(str) {
+            return ('0' + str).slice(-2)
+        }
+
+        function demoSuccessHandler(transaction) {
+            $('#paymentID').text(transaction.razorpay_payment_id);
+            var paymentDate = new Date();
+            $('#paymentDate').text(
+                padStart(paymentDate.getDate()) + '.' + padStart(paymentDate.getMonth() + 1) + '.' + paymentDate.getFullYear() + ' ' + padStart(paymentDate.getHours()) + ':' + padStart(paymentDate.getMinutes())
+            );
+            setTimeout(function () {
+                showModal('#demo-receipt-modal');
+            }, 150);
+        }</script>
+    <script>var options = {
+            key: 'rzp_live_ILgsfZCZoFIKMb',
+            amount: '1000',
+            name: 'Merchant Name',
+            description: 'Fine tshirt',
+            image: 'https://i.imgur.com/n5tjHFD.png',
+            handler: demoSuccessHandler,
+            modal: {
+                handleback: true
+            }
+        }</script>
+    <script>window.r = new Razorpay(options);
+        document.getElementById('paybtn').onclick = function () {
+            r.open()
+            $('#optinchat-container').hide();
+        }</script>
+
+    <!-- script for payment Ends -->
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+    <script>
+
+// Function to generate OTP
+function generateOTP() {
+
+    // Declare a string variable
+    // which stores all string
+    var string = '0123456789';
+    let OTP = '';
+
+    // Find the length of string
+    var len = string.length;
+    for (let i = 0; i < 3; i++) {
+        OTP += string[Math.floor(Math.random() * len)];
+    }
+    document.getElementById('Code').innerHTML = OTP.toUpperCase().bold();
+    $("#exampleModal").modal("hide");
+
+}
+
+</script>
+
+
+</html>
